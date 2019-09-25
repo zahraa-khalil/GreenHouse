@@ -47,7 +47,7 @@ let x = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
 					labels: x,
 					datasets: [{
 						label: 'Temperature',
-						
+						fill: false,
 						backgroundColor: window.chartColors.blue,
 						borderColor: window.chartColors.blue,
 						data: tSum,
