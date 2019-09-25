@@ -46,14 +46,14 @@ let x = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
 				data: {
 					labels: x,
 					datasets: [{
-						label: 'Temp',
+						label: 'Temperature',
 						
 						backgroundColor: window.chartColors.blue,
 						borderColor: window.chartColors.blue,
 						data: tSum,
 					}, {
 						label: 'Humidity',
-						fill: true,
+						fill: false,
 						backgroundColor: '#be6448',
 						borderColor: '#be6448',
 						borderDash: [15, 15],
