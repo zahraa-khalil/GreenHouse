@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <title>admin page</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Chau+Philomene+One|Great+Vibes|Lato|Lobster|Roboto|Ubuntu|Lora|Cabin sans-serif|Fascinate|Saira+Stencil+One|Open Sans|Montserrat"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/Chart.min.js"></script>
+			<script src="js/utils.js"></script>
+			<style>
+				canvas{
+					-moz-user-select: none;
+					-webkit-user-select: none;
+					-ms-user-select: none;
+					}
+			</style>
+  </head>
+
+  <body>
+  <!-- start of nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand text-white" href="#">Green House</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto col-lg-6">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white dropdown-toggle" href="#" id="navbarstore" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Store
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarstore">
+                <a class="dropdown-item" href="#">packages</a>
+                <a class="dropdown-item" href="#">parts</a>
+                <div class="dropdown-divider"></div>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="#">Tech-support <span class="sr-only">(current)</span></a>
+            </li>
+            <li>
+              <button type="button" class="btn btn-outline-primary ">house1</button>
+              <button type="button" class="btn btn-outline-secondary">house2</button>
+              <button type="button" class="btn btn-outline-success">house3</button>
+              <button type="button" class="btn btn-outline-danger">house4</button>
+            </li>
+          </ul>
+          <ul class="col-lg-3  d-flex">  
+            <a type="link" class="btn-link"
+            data-toggle="modal" data-target="#myModal"> <i class="fa fa-search fa-1x text-white p-3"></i></a>
+            <div class="modal" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                    <button type="submit" class="btn btn-primary"
+                    data-dismiss="modal">Search</button>
+                </div>
+              </div>
+            </div>
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-user-circle fa-1x text-white p-2"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">profile</a>
+                  <a class="dropdown-item" href="#">log in</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">register</a>
+                </div>
+              </li>
+            </ul> 
+        </div>
+    </nav>
+	
+	
+	<!-- end of nav bar-->
+	
+	
+	<!-- start of content -->
+	
+        <div class="container-fluid p-5">
+          <div class="row">
+            <div class=" col-3 rightdiv">
+              <a class="btn  btn-admin" data-toggle="collapse" href="#ex1">
+                <i class="fa fa-align-center text-white fa-2x"></i>
+              </a>
+              <div class="collapse" id="ex1">
+                <div class="divblock"><a href="#">Block1</a></div>	
+                <div class="divblock"><a href="#">Block1</a></div>
+                <div class="divblock"><a href="#">Block1</a></div>
+              </div>
+            </div>
+            <div class="leftdiv col-9"> 
+              <div class="row">
+                <div class="col-lg-5 col-md-5 container_chart"> 
+                    <canvas id="canvas" width="700" height="550"></canvas>
+                </div>
+                <div class=" offset-lg-1 col-lg-5 col-md-5 container_chart">
+                  <canvas></canvas>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-5 col-md-5  container_chart"> 
+                  <canvas></canvas>
+                </div>
+                <div class=" offset-lg-1 col-lg-2  offset-md-1 col-md-3  container_chart">
+                  <canvas></canvas>
+                </div>
+                <div class=" offset-lg-1 col-lg-5 col-md-5   container_chart">
+                  <canvas></canvas>
+                </div>
+              </div>
+              <div class="row">     
+                  <table class="table col-10  col-md-10 col-lg-11">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                      
+                        <tr>
+                        <th scope="row">5</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                      
+                        <tr>
+                        <th scope="row">6</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                      
+                        <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="row">
+                  <p class="par1 col-10 ">Global Sales by Top Locations</p>
+                  <p class="par2 col-10">All Products That Were Shipped</p>
+                </div>
+                <div class="row">
+                  <div class="  col-lg-5 col-md-6 col-8"> 
+                    <table class="table ">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                        
+                          <tr>
+                          <th scope="row">5</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                        
+                          <tr>
+                          <th scope="row">6</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                        
+                          <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13810.138593332265!2d31.022041650000002!3d30.07887075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1568625299934!5m2!1sar!2seg" width="570" height="340" frameborder="0" style="border-radius: 5;" allowfullscreen="" class=" col-lg-6 col-md-6 col-12 "></iframe>
+                </div>
+                  <div class="row">
+                    <p class="parcopyright col-lg-8 offset-lg-2" >copyright &copy;2019<span> Green House</span>. All Right Reserved.</p>
+                  </div>
+            </div>
+          </div>
+        </div>
+            
+
+  <!-- end of content-->
+  
+
+    <script>
+			window.onload = function() {
+				var ctx = document.getElementById('canvas').getContext('2d');
+        window.myLine = new Chart(ctx, config);
+    };
+    </script>
+
+  <script src="js/monitors.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
