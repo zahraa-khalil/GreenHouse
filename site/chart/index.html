@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>My chart.js chart</title>
+</head>
+
+<style>
+body{
+    background-color:#000;
+}
+.container{
+    padding-top: 10rem;
+    width: 50rem;
+    height: 20rem;
+}
+</style>
+<body>
+
+    <div class="container">
+        <canvas id="myChart"></canvas>
+    </div>
+    
+    <script>
+        // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+        let charType = 'bar';
+        let x = ['Boston','Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'];
+        let y = [ 30, 50, 100, 25, 18, 60];
+        let z = 'Temperature'; 
+
+        let myChart = document.getElementById('myChart').getContext('2d');
+
+        // Global options
+        Chart.defaults.global.defaultFontFamily = 'Lato';
+        Chart.defaults.global.defaultFontSize = 18;
+        Chart.defaults.global.defaultFontColor = '#777';
+
+        let temp = {
+            type: charType,
+            data: { 
+                labels: x,
+                datasets:[{
+                    label: z,
+                    data: y,
+                    backgroundColor: '#00acec',
+                    borderWidth:1,
+                    borderColor:'white',
+                    hoverBorderWidth:3,
+                    hoverBorderColor:'black'
+                }]
+            },
+// -----------------------------------------------------------------------
+            options: {
+                // title control
+                title:{
+                    display: true,
+                    text: 'Green House Temperature Monitor',
+                    fontSize: 20
+                },
+                // keys control
+                legend:{
+                    display: false,
+                    position: 'right',
+                    labels:{
+                        fontColor:'purple'
+                    }
+                },
+                // positioning
+                layout:{
+                    padding:{
+                        left:0,
+                        right:0,
+                        bottom:0,
+                        top:0
+                    }
+                },
+                // tooltips
+                 tooltips:{
+                     enabled: true
+                 }
+            }
+        };
+
+        let tempChart = new Chart(myChart, temp);
+        
+    </script>
+</body>
+</html>

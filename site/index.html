@@ -1,109 +1,118 @@
 <!doctype html>
-	<html>
-		<head>
-			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-			<meta http-equiv="X-UA-Compatible" content="ie=edge">
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-			<title>User Panel</title>
-			<link rel="stylesheet" type="text/css" href="css/bootstrap.css"><link
-				href="https://fonts.googleapis.com/css?family=Chau+Philomene+One|Great+Vibes|Lato|Lobster|Roboto|Ubuntu|Lora|Cabin sans-serif|Fascinate|Saira+Stencil+One|Open Sans|Montserrat"
-				rel="stylesheet">
+<html>
 
-			<link rel="stylesheet" href="css/fontawesome.min.css">
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-			<link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
-			<link rel="stylesheet" type="text/css" href="css/style.css">
-			<script src="js/Chart.min.js"></script>
-			<script src="js/utils.js"></script>
-			<style>
-				canvas{
-					-moz-user-select: none;
-					-webkit-user-select: none;
-					-ms-user-select: none;
-					}
-			</style>
-		</head>
-	<body>
-	
-		<!-- start of nav bar-->
-	
-		<nav class="navbar navbar-expand-lg navbar-light fixed-top ">
-			<a class="navbar-brand text-white" href="#">green house</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+	<title>User Panel</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link
+		href="https://fonts.googleapis.com/css?family=Chau+Philomene+One|Great+Vibes|Lato|Lobster|Roboto|Ubuntu|Lora|Cabin sans-serif|Fascinate|Saira+Stencil+One|Open Sans|Montserrat"
+		rel="stylesheet">
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto col-lg-6">
-					<li class="nav-item active">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet"
+		href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/Chart.min.js"></script>
+	<script src="js/utils.js"></script>
+	<style>
+		canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- start of nav bar-->
+
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+		<a class="navbar-brand text-white" href="#">green house</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto col-lg-6">
+				<li class="nav-item active">
 					<a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
-					</li>
-			
-					<li class="nav-item dropdown">
-					<a class="nav-link text-white dropdown-toggle" href="#" id="navbarstore" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				</li>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link text-white dropdown-toggle" href="#" id="navbarstore" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Store
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarstore">
-					<a class="dropdown-item" href="#">packages</a>
-					<a class="dropdown-item" href="#">parts</a>
+						<a class="dropdown-item" href="#">packages</a>
+						<a class="dropdown-item" href="#">parts</a>
 						<div class="dropdown-divider"></div>
 					</div>
-					</li>
-				
-					<li class="nav-item active">
-						<a class="nav-link text-white" href="#">Tech-support <span class="sr-only">(current)</span></a>
-					</li>
-					<li>
-						<button type="button" class="btn btn-outline-primary  ">Block1</button>
-						<button type="button" class="btn btn-outline-secondary ">Block2</button>
-						<button type="button" class="btn btn-outline-success ">Block3</button>
-						<button type="button" class="btn btn-outline-danger ">Block4</button>
-					</li>
-				</ul>
-				<ul class="col-lg-3  d-flex">
-				
-					<a type="link" class="btn-link"
-					data-toggle="modal" data-target="#myModal"> <i class="fa fa-search fa-1x text-white p-3"></i></a>
+				</li>
+
+				<li class="nav-item active">
+					<a class="nav-link text-white" href="#">Tech-support <span class="sr-only">(current)</span></a>
+				</li>
+				<li>
+					<button type="button" class="btn btn-outline-primary  ">Block1</button>
+					<button type="button" class="btn btn-outline-secondary ">Block2</button>
+					<button type="button" class="btn btn-outline-success ">Block3</button>
+					<button type="button" class="btn btn-outline-danger ">Block4</button>
+				</li>
+			</ul>
+			<ul class="col-lg-3  d-flex">
+
+				<a type="link" class="btn-link" data-toggle="modal" data-target="#myModal"> <i
+						class="fa fa-search fa-1x text-white p-3"></i></a>
 				<div class="modal" id="myModal">
-						<div class="modal-dialog">
+					<div class="modal-dialog">
 						<div class="modal-content">
-					<div class="modal-header">
-						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-					</div>
-						<button type="submit" class="btn btn-primary"data-dismiss="modal">search</button></div>
+							<div class="modal-header">
+								<input class="form-control mr-sm-2" type="search" placeholder="Search"
+									aria-label="Search">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<button type="submit" class="btn btn-primary" data-dismiss="modal">search</button>
+						</div>
 					</div>
 				</div>
-						
-					
+
+
 				<li class="nav-item dropdown">
-					<a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<i class="fa fa-user-circle fa-1x text-white p-2"></i>
+					<a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fa fa-user-circle fa-1x text-white p-2"></i>
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="#">profile</a>
-					<a class="dropdown-item" href="#">log in</a>
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="#">register</a>
+						<a class="dropdown-item" href="#">profile</a>
+						<a class="dropdown-item" href="#">log in</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">register</a>
 					</div>
 				</li>
 			</ul>
 		</div>
 	</nav>
-		
-		
-		<!-- end of nav bar-->
-		
-		
-		<!-- container start-->
-		
-		
-		<div class="container p-5">
 
-		
+
+	<!-- end of nav bar-->
+
+
+	<!-- container start-->
+
+
+	<div class="container p-5">
+
+
 		<div class="row">
-				<!-- <div class=" col-3 rightdiv">
+			<!-- <div class=" col-3 rightdiv">
 			
 			<a class="btn  btn-admin" data-toggle="collapse" href="#ex1">
 				<i class="fa fa-align-center text-white fa-2x"></i>
@@ -119,15 +128,15 @@
 				
 			</div>
 			</div>	 -->
-			
+
 			<div class="leftdiv col-12 p-1">
-			
+
 				<div class="row">
 					<div class="mainchart col-10 col-md-12 col-lg-12" style="width: 40%">
 						<canvas id="canvas"></canvas>
 					</div>
 				</div>
-				
+
 				<div class="row">
 					<div class="mainchart2 offset-col-2 col-10   col-md-5  col-lg-5">
 						<canvas id="temperature" width="500" height="350"></canvas>
@@ -135,10 +144,10 @@
 					<div class="mainchart2 offset-col-2 col-10 offset-md-2  col-md-5 offset-lg-2 col-lg-5">
 						<canvas id="humidity" width="500" height="350"></canvas>
 					</div>
-		
+
 				</div>
 
-				
+
 				<div class="row">
 					<div class="mainchart2 offset-col-2 col-10  col-md-5  col-lg-5">
 						<canvas id="light" width="500" height="350"></canvas>
@@ -147,51 +156,54 @@
 						<canvas id="moisture" width="500" height="350"></canvas>
 					</div>
 				</div>
-				
+
 				<div class="row">
-				
-				<div class=" offset-col-1 col-10 offset-lg-2 col-lg-8  offset-md-1 col-md-10  taskdiv">Notifications</div>
-				
+
+					<div class=" offset-col-1 col-10 offset-lg-2 col-lg-8  offset-md-1 col-md-10  taskdiv">Notifications
+					</div>
+
 				</div>
-				
+
 				<div class="row">
-				<p class="parcopyright col-lg-8 offset-lg-2" >copyright &copy;2019<span> Green House</span>. All Right Reserved.</p>
+					<p class="parcopyright col-lg-8 offset-lg-2">copyright &copy;2019<span> Green House</span>. All
+						Right Reserved.</p>
 				</div>
-			
+
 			</div>
-			
-			
-		
+
+
+
 		</div>
-		</div>
-		
-		<!-- container end-->
+	</div>
+
+	<!-- container end-->
 
 
 
-		<!-- start chart -->
-		<script>
-			window.onload = function() {
-				var ctx = document.getElementById('canvas').getContext('2d');
-				window.myLine = new Chart(ctx, config);
-				var ctx2 = document.getElementById('temperature').getContext('2d');
-				window.myLine = new Chart(ctx2, temp);
-				var ctx3 = document.getElementById('humidity').getContext('2d');
-				window.myLine = new Chart(ctx3, midity);
-				var ctx4 = document.getElementById('light').getContext('2d');
-				window.myLine = new Chart(ctx4, lightChar);
-				var ctx5 = document.getElementById('moisture').getContext('2d');
-				window.myLine = new Chart(ctx5, moisChart);
-			};
+	<!-- start chart -->
+	<script>
+		window.onload = function () {
+			var ctx = document.getElementById('canvas').getContext('2d');
+			window.myLine = new Chart(ctx, config);
+			// var ctx2 = document.getElementById('temperature').getContext('2d');
+			// window.myLine = new Chart(ctx2, temp);
+			// var ctx3 = document.getElementById('humidity').getContext('2d');
+			// window.myLine = new Chart(ctx3, midity);
+			// var ctx4 = document.getElementById('light').getContext('2d');
+			// window.myLine = new Chart(ctx4, lightChar);
+			// var ctx5 = document.getElementById('moisture').getContext('2d');
+			// window.myLine = new Chart(ctx5, moisChart);
+		};
 			// ---------------------------------------------------------------
-			
-			
-		</script>
-		
-		<!-- end of chart -->
-		<script src="js/monitors.js"></script>
-		<script src="js/jquery-3.4.1.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-	</body>
+
+
+	</script>
+
+	<!-- end of chart -->
+	<script src="js/monitors.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+
 </html>

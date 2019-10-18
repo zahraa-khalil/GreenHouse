@@ -1,0 +1,189 @@
+	
+	*
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Ubuntu', sans-serif;
+	color: #000000;
+}
+body
+{
+	background: #1f1f30;
+}
+
+/* start of  admin page*/
+
+.navbar
+{
+	background:  #1e1e2e;
+	color: #FFFFFF;
+}
+
+.table
+{
+	background: #27293d;
+	
+}
+.table thead
+{
+	color: grey
+}
+
+
+.par1
+{
+	font-size: 25px;
+	color: #FFFFFF;
+	text-transform: capitalize;
+	padding-top: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.par2
+{
+	font-size: 15px;
+	color:#727272;
+	text-transform: capitalize;
+
+	font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+.rightdiv
+{
+	
+	margin-top: 30px;
+}
+
+.container_chart{
+    padding-top: 2rem;
+    width: 50rem;
+    height: 20rem;
+	background: #27293d;
+	margin-bottom: 5px;
+	
+	border-radius: 5px;
+}
+
+.btn-admin
+{
+	background:  #1e1e2e;
+	margin: auto;
+	width: 90%;
+	text-align: center;
+}
+
+
+.card{
+	background-color: #ff7484;
+	color: white;
+	
+}
+.leftdiv
+{
+	
+	margin-top: 30px;
+
+}
+.map_row
+{
+	background: #27293d;
+	border-radius: 10px;
+	margin-right: 78px;
+}
+
+.parcopyright
+{
+	color: #FFFFFF;
+	font-size: 15px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+		font-family: 'Roboto', sans-serif;
+
+}
+
+.parcopyright span
+{
+	color: #d251db;
+}
+
+
+
+.btn_fan
+{
+  height: 50px;	
+ font-family: 'Roboto', sans-serif;
+ text-transform: capitalize;
+	border-radius: 10px;
+
+
+	
+}
+
+@media(min-width:0) and (max-width:1024px)
+{
+	.rightdiv
+	{
+		z-index: 5;
+	}
+}
+
+
+/* start of user page*/
+
+.divblock
+{
+	background: #dd4fcf;
+	width: 60%;
+	height: 60px;
+	margin: auto;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.divblock a
+{
+	color: #FFFFFF;
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	
+}
+.mainchart
+{
+	background: #27293d;
+	
+	border-radius: 5px;
+}
+
+.mainchart2
+{
+	background: #27293d;
+
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+
+}
+
+.blocks
+{
+margin: auto;
+}
+.taskdiv
+{
+	background: #27293d;
+	height: 300px;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+/* end of user page*/
