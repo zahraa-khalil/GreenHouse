@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>profile</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	 <link
+    href="https://fonts.googleapis.com/css?family=Chau+Philomene+One|Great+Vibes|Lato|Lobster|Roboto|Ubuntu|Lora|Cabin sans-serif|Fascinate|Saira+Stencil+One|Open Sans|Montserrat|Big+Shoulders+Display"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script>
+	function loadpage(x){
+		$("#cont").load(x);
+	}
+			
+			
+ 
+                				
+</script>
+</head>
+
+<body>
+	
+	
+	<div class="container">
+	<div class="row">
+		<div class="col-3 div1">
+		
+			<div class="col-12">
+			<img src="images/pexels-photo-1222271.jpeg" alt="userphoto" class="imguser col-12">
+			</div>
+			<p class="username_par"> user name</p>
+			
+			 <!-- ...................... -->
+      <div class="list-group list-group-flush lista">
+          <a href="#" class="list-group-item list-group-item-action orders_div" >
+             <i class="fa fa-bars"></i> my orders</a>
+		    <a href="#" class="list-group-item list-group-item-action orders_div" onClick="loadpage('pay-offline.html');" >
+             <i class="fa fa-google-wallet"></i> pay offline</a>
+		     <a href="#" class="list-group-item list-group-item-action orders_div"  onClick="loadpage('edit-account.html');">
+             <i class="fa fa-pencil"></i> edit account</a>
+		   <a href="#" class="list-group-item list-group-item-action orders_div" onClick="loadpage('change-password.html');" >
+             <i class="fa fa-user"></i> change password</a>
+		   <a href="#" class="list-group-item list-group-item-action orders_div" >
+             <i class="fa fa-trash"></i>delete account</a>
+		  
+		   <a href="#" class="list-group-item list-group-item-action orders_div" >
+             <i class="fa fa-sign-out"></i> log out</a>
+		  
+			</div>
+<!-- ........................ -->
+			
+		</div>
+		  
+		<div class="col-8 offset-1 div2" id="cont">
+		<p class="par1 col-12">my orders</p>
+			<p class="par2 col-12">your orders on one place</p>
+			<p class="par3 col-12">if you have any question feel free to <a href="#">contact us</a> our customer service work 24/7</p>
+			
+			
+			<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">on:</th>
+      <th scope="col">due amount:</th>
+      <th scope="col">invoice no:</th>
+      <th scope="col">qty:</th>
+		<th scope="col">size:</th>
+      <th scope="col">order date:</th>
+      <th scope="col">paid/unpaid:</th>
+      <th scope="col">status:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      
+      <td>le 122</td>
+      <td>4536636</td>
+		<td>1</td>
+		<td>large</td>
+		<td>2019-02-05</td>
+		<td>unpaid</td>
+		<td>
+		<button type="button" class="btn btn-primary btn1">confirm paid</button>
+
+		</td>
+    </tr>
+  
+   
+  </tbody>
+</table>
+			
+
+		
+		</div>
+		
+		</div>
+	
+	</div>
+	
+	
+		
+	
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

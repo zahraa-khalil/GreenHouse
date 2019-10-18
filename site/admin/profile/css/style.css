@@ -1,0 +1,115 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+.div1,
+.div2
+{
+	border: 2px solid #eee;
+	
+}
+.imguser
+{
+	height: 200px;
+}
+
+.username_par
+{
+	color: #1e0d53;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	text-transform: capitalize;
+	margin-left: 40px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+.orders_div
+{
+	background: #fff;
+	color: #337ab7;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	text-transform: capitalize;
+	padding: 5px;
+	
+	
+}
+
+.orders_div:hover
+{
+	background: #337ab7;
+	color: #fff;
+	
+}
+
+.par1,
+.par2
+
+{
+	color: #1e0d53;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	text-transform: capitalize;
+	
+	margin-top: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+.par2
+{
+	font-size: 18px;
+	
+}
+.par3
+{
+	color: #9e9e9e;
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+	
+	text-transform: capitalize;
+	
+	margin-top: 20px;
+	
+	text-align: center;
+	
+}
+.table,th,td
+{
+	border: 1px solid #eee;
+}
+
+.table th
+{
+	font-size: 12px;
+	text-transform: capitalize;
+}
+.table td
+{
+	font-size: 13px;
+}
+.btn1
+{
+	height: 30px;
+	font-size: 10px;
+}
+
+label
+{
+	color: #1e0d53;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	text-transform: capitalize;
+	
+	font-weight: bold;
+}
+.form-group input
+{
+	font-size: 13px;
+}
